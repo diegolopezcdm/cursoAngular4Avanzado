@@ -2,9 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';  //<<<< import it here
 import { routing, appRoutingProviders } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Importar nuevo modulo
 import { ModuloEmailModule} from './moduloemail/moduloemail.module';
+import { AdminModule} from './admin/admin.module';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -33,7 +35,9 @@ import { TinyEditorComponent } from './component/simple-tiny/simple-tiny.compone
     BrowserModule, 
     FormsModule,  //<<<< and here
     routing,
-    ModuloEmailModule
+    ModuloEmailModule,
+    AdminModule,
+    BrowserAnimationsModule
   ],
   providers: [
     appRoutingProviders
